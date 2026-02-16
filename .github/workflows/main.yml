@@ -1,3 +1,5 @@
+
+          
 name: APK_Olusuyor
 on: [push]
 jobs:
@@ -6,8 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Buildozer ile APK Yap
-        uses: ArtemSerebrennkov/buildozer-action@v1
+        uses: Peter-Loster/buildozer-action@v1
         with:
-          repository_path: .
           buildozer_version: master
           
