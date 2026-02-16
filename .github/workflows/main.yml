@@ -5,11 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Java Kurulumu
-        uses: actions/setup-java@v2
-        with:
-          java-version: '11'
-          distribution: 'adopt'
       - name: Buildozer ile APK Yap
         uses: ArtemSerebrennkov/buildozer-action@v1
         with:
